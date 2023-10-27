@@ -1,4 +1,4 @@
-package JavaBasics;
+package java_basics;
 public class QuickSort {
 
     public static void quickSort(int arr[], int begin, int end) {
