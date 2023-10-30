@@ -1,4 +1,4 @@
-package java_basics;
+package com.solvd.javabasics;
 
 public class UserInfo {
     public static void main(String[] args) {
