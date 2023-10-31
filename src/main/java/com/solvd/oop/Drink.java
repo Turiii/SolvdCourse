@@ -12,7 +12,7 @@ public class Drink extends MenuItem{
 
     @Override
     public String toString() {
-        return "Meal{" +
+        return "Drink{" +
                 "name='" + getName() + '\'' +
                 "price='" + getPrice() + '\'' +
                 "type='" + drinkType + '\'' +
