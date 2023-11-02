@@ -1,4 +1,4 @@
-package com.solvd.oop;
+package com.solvd.lab2;
 
 import java.util.Objects;
 

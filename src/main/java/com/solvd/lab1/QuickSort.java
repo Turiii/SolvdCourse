@@ -1,4 +1,4 @@
-package com.solvd.javabasics;
+package com.solvd.lab1;
 public class QuickSort {
 
     public static void quickSort(int arr[], int begin, int end) {

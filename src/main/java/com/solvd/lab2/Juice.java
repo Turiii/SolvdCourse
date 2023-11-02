@@ -1,4 +1,4 @@
-package com.solvd.oop;
+package com.solvd.lab2;
 
 public class Juice extends Drink{
     public Juice(String name, double price, String drinkType) {

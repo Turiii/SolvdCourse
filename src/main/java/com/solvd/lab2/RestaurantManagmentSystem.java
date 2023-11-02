@@ -1,4 +1,4 @@
-package com.solvd.oop;
+package com.solvd.lab2;
 
 public class RestaurantManagmentSystem {
     public static void main(String[] args) {

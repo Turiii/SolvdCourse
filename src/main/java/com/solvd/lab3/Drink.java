@@ -1,8 +1,8 @@
-package com.solvd.oop;
+package com.solvd.lab3;
 
 import java.util.Objects;
 
-public class Drink extends MenuItem{
+public class Drink extends MenuItem {
     private String drinkType;
 
     public Drink(String name, double price, String drinkType) {

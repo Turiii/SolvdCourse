@@ -1,4 +1,4 @@
-package com.solvd.oop;
+package com.solvd.lab2;
 
 public class Special extends Meal{
     private String specialIngredient;
