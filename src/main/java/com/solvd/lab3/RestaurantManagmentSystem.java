@@ -25,5 +25,8 @@ public class RestaurantManagmentSystem {
         mainCourse.consume();
 
         System.out.println(special.getAllItems());
+        MainCourse.burn();
+        Meal.burn();
+        System.out.println(Meal.getBurntMeals());
     }
 }

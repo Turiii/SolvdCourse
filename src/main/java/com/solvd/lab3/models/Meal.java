@@ -8,6 +8,8 @@ import java.util.Objects;
 public class Meal extends MenuItem implements Edible, Cookable {
     private MealType mealType;
 
+    public static Integer burntMeals = 0;
+
     public Meal(String name, double price, MealType mealType) {
         super(name,price);
         this.mealType = mealType;
@@ -43,5 +45,13 @@ public class Meal extends MenuItem implements Edible, Cookable {
     @Override
     public void consume() {
         System.out.println("consume() from Meal");
+    }
+
+    public static void burn(){
+        burntMeals++;
+    }
+
+    public static Integer getBurntMeals(){
+        return burntMeals;
     }
 }

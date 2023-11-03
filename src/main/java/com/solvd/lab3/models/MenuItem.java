@@ -49,4 +49,5 @@ public abstract class MenuItem implements Priceable, Nameable {
     public final Integer getAllItems(){
         return allItems;
     }
+
 }
