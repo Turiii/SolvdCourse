@@ -7,6 +7,8 @@ import java.util.Objects;
 
 public abstract class MenuItem implements Priceable, Nameable {
 
+    private Integer id;
+
     private static Integer allItems = 0;
 
     private String name;
@@ -15,6 +17,7 @@ public abstract class MenuItem implements Priceable, Nameable {
     public MenuItem(String name, double price) {
         this.name = name;
         this.price = price;
+        this.id = allItems;
         allItems++;
     }
 
