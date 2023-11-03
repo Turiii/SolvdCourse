@@ -1,14 +1,21 @@
-package com.solvd.lab3;
+package com.solvd.lab3.models;
+
+import com.solvd.lab3.interfaces.Nameable;
+import com.solvd.lab3.interfaces.Priceable;
 
 import java.util.Objects;
 
-public class MenuItem {
+public abstract class MenuItem implements Priceable, Nameable {
+
+    private static Integer allItems = 0;
+
     private String name;
     private double price;
 
     public MenuItem(String name, double price) {
         this.name = name;
         this.price = price;
+        allItems++;
     }
 
     @Override
@@ -31,11 +38,15 @@ public class MenuItem {
         return Double.compare(price, ((MenuItem) obj).price) == 0 && name.equals(((MenuItem) obj).name);
     }
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public double getPrice() {
+    public final double getPrice() {
         return price;
+    }
+
+    public final Integer getAllItems(){
+        return allItems;
     }
 }

@@ -1,11 +1,14 @@
-package com.solvd.lab3;
+package com.solvd.lab3.models;
+
+import com.solvd.lab3.interfaces.Cookable;
+import com.solvd.lab3.interfaces.Edible;
 
 import java.util.Objects;
 
-public class Meal extends MenuItem {
-    private String mealType;
+public class Meal extends MenuItem implements Edible, Cookable {
+    private MealType mealType;
 
-    public Meal(String name, double price, String mealType) {
+    public Meal(String name, double price, MealType mealType) {
         super(name,price);
         this.mealType = mealType;
     }
@@ -30,5 +33,15 @@ public class Meal extends MenuItem {
         if(obj == null || getClass() != obj.getClass()) return false;
         if(!super.equals(obj)) return false;
         return mealType.equals(((Meal) obj).mealType);
+    }
+
+    @Override
+    public void cook() {
+        System.out.println("cook() from Meal");
+    }
+
+    @Override
+    public void consume() {
+        System.out.println("consume() from Meal");
     }
 }
