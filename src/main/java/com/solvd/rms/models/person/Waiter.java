@@ -4,7 +4,7 @@ import com.solvd.rms.interfaces.person.IWaiter;
 import com.solvd.rms.models.order.Bill;
 import com.solvd.rms.models.order.Order;
 
-public final class Waiter extends Employee implements IWaiter {
+public class Waiter extends Employee implements IWaiter {
     public Waiter(String name, Double salary) {
         super(name, salary);
     }

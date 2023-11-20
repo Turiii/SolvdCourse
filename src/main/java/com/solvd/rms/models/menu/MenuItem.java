@@ -4,7 +4,7 @@ import com.solvd.rms.interfaces.menu.Nameable;
 import com.solvd.rms.interfaces.menu.Priceable;
 
 public abstract class MenuItem implements Nameable, Priceable {
-    private Integer id;
+    private final Integer id;
     private String name;
     private Double price;
     private String description;

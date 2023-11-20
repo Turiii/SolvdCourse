@@ -2,7 +2,7 @@ package com.solvd.rms.models.menu;
 
 import com.solvd.rms.interfaces.menu.Drinkable;
 
-public final class Drink extends MenuItem implements Drinkable {
+public class Drink extends MenuItem implements Drinkable {
     @Override
     public void sip() {
         System.out.println("Sipping...");
