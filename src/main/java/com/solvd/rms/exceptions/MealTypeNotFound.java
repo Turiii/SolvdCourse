@@ -1,8 +1,8 @@
 package com.solvd.rms.exceptions;
 
-public class MealTypeNotFound extends TypeNotPresentException{
-    public MealTypeNotFound(String typeName, Throwable cause) {
-        super(typeName, cause);
+public class MealTypeNotFound extends Exception{
+    public MealTypeNotFound(String typeName) {
+        super(typeName);
     }
 
     @Override
